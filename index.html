@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Word Generator | Midnight Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-vignette"></div>
+    <div class="glow-sphere"></div>
+    <div class="glow-sphere-2"></div>
+
+    <main class="glass-container">
+        <header>
+            <h1 class="neon-title">Midnight<span>Tech</span></h1>
+            <p class="subtitle">Secure Passphrase Generator</p>
+        </header>
+
+        <section class="controls">
+            <div class="input-group">
+                <label for="wordCount">Number of Words</label>
+                <input type="number" id="wordCount" value="7" min="1" max="50">
+            </div>
+            <button id="generateBtn" class="btn-primary">Generate</button>
+        </section>
+
+        <section class="output-container">
+            <div id="outputArea" class="output-area">
+                <span class="placeholder">Click generate to start...</span>
+            </div>
+            <button id="copyBtn" class="btn-secondary" disabled>Copy to Clipboard</button>
+        </section>
+
+        <footer>
+            <p>Entropy Pool: <span id="poolCount">1,633</span> words</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
